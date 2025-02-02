@@ -1,0 +1,107 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 3vh 10% 3vh 10%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 100px 60px repeat(5, 1fr);
+    gap: 1px;
+    border: 2px solid #000;
+    background-color: #000;
+    font-size: 12px;
+}
+.grid > div {
+    background-color: rgb(255, 255, 255);
+    padding: 2px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.time-header {
+    font-weight: bold;
+}
+.day-cell {
+    background-color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.group-cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.1;
+}
+.pink {
+    background-color: #cb7da3 !important;
+}
+.blue {
+    background-color: #e6f3ff !important;
+}
+.bg-green-100 {
+    background-color: #d6f5d6 !important;
+}
+.yellow-bg {
+    background-color: #ffff99 !important;
+}
+
+@media (max-width: 768px) {
+    .grid-schedule {
+        font-size: 10px;
+        grid-template-columns: 80px 40px repeat(5, 1fr);
+    }
+    .colom {
+        padding: 8px;
+       min-height: 0;
+    }
+}
+
+.day-column {
+    background-color: #e6f3ff;
+}
+
+.group-cell {
+    background-color: #ffffff;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.header-cell {
+    background-color: white;
+    font-weight: normal;
+}
+
+.colom {
+    background-color: #e6f3ff;
+}
+
+.yellow-bg {
+    background-color: #ffff99;
+}
+
+.green-bg {
+    background-color: #ccffcc !important;
+}
+
+.teal-bg {
+    background-color: #79b5b5 !important;
+}
+
+.last {
+    background-color: #00ffff !important;
+}
+
+.online {
+    font-size: 11px;
+}
